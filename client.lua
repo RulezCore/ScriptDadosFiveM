@@ -3,8 +3,10 @@ RegisterCommand('dados', function(source, args, rawCommand)
 
     if theArgs then
         for num in theArgs:gmatch('[^-%s]+') do
-            print(num .. '/')
+            nums[num]
         end
+
+        print('Numero 1: ' .. nums[0] .. 'Numero 2: ' .. nums[1])
     else 
         print('Comeme un huevo')
     end
