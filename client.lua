@@ -1,5 +1,6 @@
 RegisterCommand('dados', function(source, args, rawCommand)
-    print(args[1]) end, false
+    if(args[1] and args[3]) then
+        print('Los argumentos son: ' .. args[1] .. '-' .. args[3])
 )
 
 
