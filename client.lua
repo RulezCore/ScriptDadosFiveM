@@ -1,5 +1,6 @@
 RegisterCommand('dados', function(source, args, rawCommand)
     theArgs = args[1]
+    player = GetPlayerName(source)
 
     if theArgs then
         numeros = {}
@@ -13,7 +14,7 @@ RegisterCommand('dados', function(source, args, rawCommand)
         TriggerEvent('chat:addMessage', {
             color = { 255, 0, 0},
             multiline = true,
-            args = {GetPlayerName(source), "Usa el comando asi: /dados 1-12"}
+            args = {player, "Usa el comando asi: /dados 1-12"}
           })
     end
     
