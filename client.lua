@@ -1,6 +1,8 @@
 RegisterCommand('dados', function(source, args, rawCommand)
-    if args then
-        print('Los argumentos son: ' .. args[1] .. '-' .. args[3])
+    theArgs = args[1]
+
+    if theArgs then
+        print(theArgs)
     else 
         print('Comeme un huevo')
     end
