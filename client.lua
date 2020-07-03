@@ -7,7 +7,8 @@ RegisterCommand('dados', function(source, args, rawCommand)
             table.insert(numeros, num)
         end
 
-        print(numeros)
+        resultado = math.random(numeros[1], numeros[2])
+        print(resultado)
     else 
         print('Comeme un huevo')
     end
