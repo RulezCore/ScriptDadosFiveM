@@ -13,7 +13,7 @@ RegisterCommand('dados', function(source, args, rawCommand)
         TriggerEvent('chat:addMessage', {
             color = { 255, 0, 0},
             multiline = true,
-            args = {"Me", "Usa el comando asi: /dados 1-12"}
+            args = {GetPlayerName(source), "Usa el comando asi: /dados 1-12"}
           })
     end
     
