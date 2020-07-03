@@ -10,10 +10,13 @@ RegisterCommand('dados', function(source, args, rawCommand)
         resultado = math.random(numeros[1], numeros[2])
         print(resultado)
     else 
-        print('Comeme un huevo')
+        TriggerEvent('chat:addMessage', {
+            color = { 255, 0, 0},
+            multiline = true,
+            args = {"Me", "Usa el comando asi: /dados 1-12"}
+          })
     end
     
     end, false
 )
-
 
