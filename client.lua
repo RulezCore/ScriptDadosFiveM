@@ -4,7 +4,7 @@ RegisterCommand('dados', function(source, args, rawCommand)
     if theArgs then
         num1, num2 = theArgs:match("([^-]+),([^-]+)")
         print(num1)
-        print(num12)
+        print(num2)
     else 
         print('Comeme un huevo')
     end
