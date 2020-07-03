@@ -5,6 +5,6 @@ author 'RulezCore y Yau'
 description 'Script to use the command /dados'
 version '0.1'
 
-resource_type 'gametype' { name = 'My awesome game type!' }
+resource_type 'gametype' { name = 'My awesome game type!!' }
 
 client_script 'mymode_client.lua'
