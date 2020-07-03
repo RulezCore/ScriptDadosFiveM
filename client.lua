@@ -1,5 +1,5 @@
 RegisterCommand('dados', function(source, args, rawCommand)
-    print(source) end, false
+    print(args) end, false
 )
 
 
