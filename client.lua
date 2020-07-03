@@ -2,7 +2,9 @@ RegisterCommand('dados', function(source, args, rawCommand)
     theArgs = args[1]
 
     if theArgs then
-        print(type(theArgs))
+        num1, num2 = theArgs:match("([^-]+),([^-]+)")
+        print(num1)
+        print(num12)
     else 
         print('Comeme un huevo')
     end
