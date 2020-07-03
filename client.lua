@@ -2,8 +2,8 @@ RegisterCommand('dados', function(source, args, rawCommand)
     theArgs = args[1]
 
     if theArgs then
-        local result = mw.text.split(theArgs,"-")
-        print(result[0] .. result[1])
+        for num in theArgs:gmatch('[^-%s]+') do
+            print(num .. '/')
     else 
         print('Comeme un huevo')
     end
